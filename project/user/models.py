@@ -15,7 +15,7 @@ class User(models.Model):
     email = models.EmailField()
     gender = models.CharField(max_length=10, choices=gender_choices)
 
+    def __str__(self):
+        return self.first_name + ' ' + self.last_name
 
-def __str__(self):
-    return self.last_name
 
